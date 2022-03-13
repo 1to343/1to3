@@ -1,0 +1,7 @@
+TARG_INC=include
+TARG_LIB=lib
+TARG_PATH=/home/isomatov/workspace/c/src/lib
+test:test.o
+	gcc test.o -L./$(TARG_LIB) -lco -o test
+test.o:test.c
+	gcc -c test.c -I./$(TARG_INC)
