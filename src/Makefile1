@@ -1,2 +1,0 @@
-all:co.c
-	gcc -fPIC -c co.c

@@ -1,9 +1,0 @@
-TARG_INC=include/
-TARG_LIB=lib/
-.PHONY: inc lib
-inc:lib
-	cp co.h $(TARG_INC)
-lib:libco.so
-	mv libco.so $(TARG_LIB)
-libco.so:
-	gcc -shared -o libco.so co.o
