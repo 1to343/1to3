@@ -1,0 +1,4 @@
+TARG_INC=../include
+TARG_LIB=../lib
+test:
+	gcc test.c -I./$(TARG_INC) -L./$(TARG_LIB) -lco -o test
